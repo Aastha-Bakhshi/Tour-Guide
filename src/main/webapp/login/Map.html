@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tour Guide</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="map.css">
+    <script src="map.js"></script>
+
+    
+
+  </head>
+  <body>
+ <h1>Welcome To Tour Guide</h1>
+    <div id="map"></div>
+    <div id="main-panel">
+        <div>
+            <b>Start:</b>
+            
+            <select id="start">
+              <option value="New Delhi Railway Station, Bhavbhuti Marg">New Delhi Railway Station, Bhavbhuti Marg</option>
+                 <option value="Indira Gandhi International Airport  (DEL), New Delhi, Delhi">Indira Gandhi International Airport</option>
+                 <option value="India Gate">India Gate</option>
+                <option value="Lotus Temple">Lotus Temple</option> 
+                <option value="Rashtrapati Bhavan">Rashtrapati Bhavan</option>
+                <option value="Qutub Minar">Qutub Minar</option>
+                <option value="Lotus Temple">Lotus Temple</option>
+                <option value="Akshardham Temple">Akshardham Temple, Block B, Pandav Nagar, Delhi</option>
+               
+              </select>
+
+            <b>Waypoints:</b> <br />
+            <select multiple id="waypoints">
+              <option value="New Delhi Railway Station, Bhavbhuti Marg">New Delhi Railway Station, Bhavbhuti Marg</option>
+                 <option value="Indira Gandhi International Airport  (DEL), New Delhi, Delhi">Indira Gandhi International Airport</option>
+                 <option value="India Gate">India Gate</option>
+                <option value="Lotus Temple">Lotus Temple</option> 
+                <option value="Rashtrapati Bhavan">Rashtrapati Bhavan</option>
+                <option value="Qutub Minar">Qutub Minar</option>
+                <option value="Lotus Temple">Lotus Temple</option>
+                <option value="Akshardham Temple">Akshardham Temple, Block B, Pandav Nagar, Delhi</option>
+             
+                
+               
+              </select>
+
+            <b>End:</b>
+            <select id="end">
+                  <option value="New Delhi Railway Station, Bhavbhuti Marg">New Delhi Railway Station, Bhavbhuti Marg</option>
+                 <option value="Indira Gandhi International Airport  (DEL), New Delhi, Delhi">Indira Gandhi International Airport</option>
+                 <option value="India Gate">India Gate</option>
+                <option value="Lotus Temple">Lotus Temple</option> 
+                <option value="Rashtrapati Bhavan">Rashtrapati Bhavan</option>
+                <option value="Qutub Minar">Qutub Minar</option>
+                <option value="Lotus Temple">Lotus Temple</option>
+                <option value="Akshardham Temple">Akshardham Temple, Block B, Pandav Nagar, Delhi</option>
+              </select>
+            <div  class="btn"> <input type="submit" id="submit_btn" />  </div>
+        </div>
+        <div id="directions-route"></div>
+    </div>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBAoKQLHah3tfC-Hq0ikM4np-LDwptN2Y&callback=initMap">
+    
+</script>
+  </body>
+</html>

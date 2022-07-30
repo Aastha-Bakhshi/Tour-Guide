@@ -1,0 +1,123 @@
+@charset "ISO-8859-1";
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.379), rgba(0, 0, 0, 0.325)), url(registration.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contain {
+    position: absolute;
+    top: 15%;
+
+    left: 35%;
+    width: 400px;
+    border-radius: 25px;
+
+    padding: 50px 30px;
+    background: linear-gradient
+    (rgba(217, 235, 235, 0.271), rgba(212, 238, 239, 0.244));
+    box-shadow: 7px 7px 60px rgba(0, 0, 0, 0.681);
+
+
+
+}
+
+.contain h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+     font-family: 'Merriweather', serif; 
+    color: rgba(0, 0, 0, 0.918);
+}
+
+.contain i {
+    position: absolute;
+
+}
+
+
+.bot {
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.icon {
+    padding: 7px;
+    min-width: 10px;
+
+}
+
+
+.contain input {
+    width: 80%;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 6px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+
+
+}
+
+.contain label {
+    font-size: 20px;
+    font-weight: bolder;
+   
+    color: rgba(0, 0, 0, 0.89);
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0.901);
+    margin-left: 33%;
+    margin-bottom: 40px;
+    cursor: pointer;
+
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.851);
+    border-radius: 15px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+
+}
+
+.btn:hover {
+    color: rgba(255, 255, 255, 0.901);
+    background-color: gray;
+
+}
+
+.contain p {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.contain p a {
+    font-weight: lighter;
+    color: white;
+    padding: 5px;
+
+    text-decoration: none;
+    border: hidden;
+    background-color: rgba(0, 0, 0, 0.903);
+    border-radius: 15px;
+}
+
+
+.contain p a:hover {
+    color: rgba(255, 255, 255, 0.901);
+    background-color: rgb(67, 65, 65);
+
+}

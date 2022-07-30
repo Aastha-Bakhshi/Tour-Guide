@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="reg.css">
+<script src="https://kit.fontawesome.com/fc499740b0.js" crossorigin="anonymous"></script>
+      <script>
+      
+      function onChange() {
+    	  const password = document.querySelector('input[name=psw]');
+    	  const confirm = document.querySelector('input[name= psw_repeat]');
+    	  if (confirm.value === password.value) {
+    	    confirm.setCustomValidity('');
+    	  } else {
+    	    confirm.setCustomValidity('Passwords do not match');
+    	  }
+    	}
+            
+        </script>
+<title>Insert title here</title>
+</head>
+<body>
+ <div class="contain">
+            <h1>Register Now</h1>
+            
+            <form action="register.jsp" method="get" >
+           
+
+            <div class="bot">
+                <label for="email">Email</label><br>
+                <i class="fa fa-envelope icon"></i>
+                <input type="email" placeholder="Enter Email" name="email" id="email" required>
+            </div>
+
+            <div class="bot">
+                <label for="psw"><b>Password</b></label><br>
+                <i class="fa-solid fa-key icon"></i>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required   onChange="onChange()">
+            </div>
+            <div class="bot">
+                <label for="psw-repeat"><b>Repeat Password</b></label><br>
+                <i class="fa-solid fa-key icon"></i>
+                <input type="password" placeholder="Repeat Password" name="psw_repeat" id="psw_repeat" required    onChange="onChange()">
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+            
+           
+            </form>
+
+            <p>Already have an account? <a href=http://localhost:8080/Tour_guide/login/Login.html>Sign in</a>.</p>
+        </div>
+        
+      
+
+
+
+</body>
+</html>
